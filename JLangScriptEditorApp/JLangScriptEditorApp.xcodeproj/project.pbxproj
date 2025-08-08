@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9B786742E45BFC000F07A89 /* JLangScriptEditorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786732E45BFC000F07A89 /* JLangScriptEditorAppApp.swift */; };
+		D9B786762E45BFC000F07A89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786752E45BFC000F07A89 /* ContentView.swift */; };
+		D9B786782E45BFC000F07A89 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786772E45BFC000F07A89 /* Item.swift */; };
+		D9B7867A2E45BFC200F07A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B786792E45BFC200F07A89 /* Assets.xcassets */; };
+		D9B7867D2E45BFC200F07A89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B7867C2E45BFC200F07A89 /* Preview Assets.xcassets */; };
+		D9B786882E45BFC200F07A89 /* JLangScriptEditorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786872E45BFC200F07A89 /* JLangScriptEditorAppTests.swift */; };
+		D9B786922E45BFC200F07A89 /* JLangScriptEditorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786912E45BFC200F07A89 /* JLangScriptEditorAppUITests.swift */; };
+		D9B786942E45BFC200F07A89 /* JLangScriptEditorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786932E45BFC200F07A89 /* JLangScriptEditorAppUITestsLaunchTests.swift */; };
+		D9B786A12E45C0F900F07A89 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786A02E45C0F900F07A89 /* AppState.swift */; };
+		D9B786A32E45CFFF00F07A89 /* JLangInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B786A22E45CFFF00F07A89 /* JLangInterpreter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9B786842E45BFC200F07A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B786682E45BFC000F07A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9B7866F2E45BFC000F07A89;
+			remoteInfo = JLangScriptEditorApp;
+		};
+		D9B7868E2E45BFC200F07A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B786682E45BFC000F07A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9B7866F2E45BFC000F07A89;
+			remoteInfo = JLangScriptEditorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9B786702E45BFC000F07A89 /* JLangScriptEditorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLangScriptEditorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B786732E45BFC000F07A89 /* JLangScriptEditorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLangScriptEditorAppApp.swift; sourceTree = "<group>"; };
+		D9B786752E45BFC000F07A89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9B786772E45BFC000F07A89 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D9B786792E45BFC200F07A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9B7867C2E45BFC200F07A89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9B7867E2E45BFC200F07A89 /* JLangScriptEditorApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JLangScriptEditorApp.entitlements; sourceTree = "<group>"; };
+		D9B786832E45BFC200F07A89 /* JLangScriptEditorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLangScriptEditorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B786872E45BFC200F07A89 /* JLangScriptEditorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLangScriptEditorAppTests.swift; sourceTree = "<group>"; };
+		D9B7868D2E45BFC200F07A89 /* JLangScriptEditorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLangScriptEditorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B786912E45BFC200F07A89 /* JLangScriptEditorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLangScriptEditorAppUITests.swift; sourceTree = "<group>"; };
+		D9B786932E45BFC200F07A89 /* JLangScriptEditorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLangScriptEditorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9B786A02E45C0F900F07A89 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D9B786A22E45CFFF00F07A89 /* JLangInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLangInterpreter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9B7866D2E45BFC000F07A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B786802E45BFC200F07A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B7868A2E45BFC200F07A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9B786672E45BFC000F07A89 = {
+			isa = PBXGroup;
+			children = (
+				D9B786722E45BFC000F07A89 /* JLangScriptEditorApp */,
+				D9B786862E45BFC200F07A89 /* JLangScriptEditorAppTests */,
+				D9B786902E45BFC200F07A89 /* JLangScriptEditorAppUITests */,
+				D9B786712E45BFC000F07A89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9B786712E45BFC000F07A89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9B786702E45BFC000F07A89 /* JLangScriptEditorApp.app */,
+				D9B786832E45BFC200F07A89 /* JLangScriptEditorAppTests.xctest */,
+				D9B7868D2E45BFC200F07A89 /* JLangScriptEditorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9B786722E45BFC000F07A89 /* JLangScriptEditorApp */ = {
+			isa = PBXGroup;
+			children = (
+				D9B786732E45BFC000F07A89 /* JLangScriptEditorAppApp.swift */,
+				D9B786A22E45CFFF00F07A89 /* JLangInterpreter.swift */,
+				D9B786752E45BFC000F07A89 /* ContentView.swift */,
+				D9B786772E45BFC000F07A89 /* Item.swift */,
+				D9B786A02E45C0F900F07A89 /* AppState.swift */,
+				D9B786792E45BFC200F07A89 /* Assets.xcassets */,
+				D9B7867E2E45BFC200F07A89 /* JLangScriptEditorApp.entitlements */,
+				D9B7867B2E45BFC200F07A89 /* Preview Content */,
+			);
+			path = JLangScriptEditorApp;
+			sourceTree = "<group>";
+		};
+		D9B7867B2E45BFC200F07A89 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9B7867C2E45BFC200F07A89 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9B786862E45BFC200F07A89 /* JLangScriptEditorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9B786872E45BFC200F07A89 /* JLangScriptEditorAppTests.swift */,
+			);
+			path = JLangScriptEditorAppTests;
+			sourceTree = "<group>";
+		};
+		D9B786902E45BFC200F07A89 /* JLangScriptEditorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9B786912E45BFC200F07A89 /* JLangScriptEditorAppUITests.swift */,
+				D9B786932E45BFC200F07A89 /* JLangScriptEditorAppUITestsLaunchTests.swift */,
+			);
+			path = JLangScriptEditorAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9B7866F2E45BFC000F07A89 /* JLangScriptEditorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9B786972E45BFC200F07A89 /* Build configuration list for PBXNativeTarget "JLangScriptEditorApp" */;
+			buildPhases = (
+				D9B7866C2E45BFC000F07A89 /* Sources */,
+				D9B7866D2E45BFC000F07A89 /* Frameworks */,
+				D9B7866E2E45BFC000F07A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLangScriptEditorApp;
+			productName = JLangScriptEditorApp;
+			productReference = D9B786702E45BFC000F07A89 /* JLangScriptEditorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9B786822E45BFC200F07A89 /* JLangScriptEditorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9B7869A2E45BFC200F07A89 /* Build configuration list for PBXNativeTarget "JLangScriptEditorAppTests" */;
+			buildPhases = (
+				D9B7867F2E45BFC200F07A89 /* Sources */,
+				D9B786802E45BFC200F07A89 /* Frameworks */,
+				D9B786812E45BFC200F07A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9B786852E45BFC200F07A89 /* PBXTargetDependency */,
+			);
+			name = JLangScriptEditorAppTests;
+			productName = JLangScriptEditorAppTests;
+			productReference = D9B786832E45BFC200F07A89 /* JLangScriptEditorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9B7868C2E45BFC200F07A89 /* JLangScriptEditorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9B7869D2E45BFC200F07A89 /* Build configuration list for PBXNativeTarget "JLangScriptEditorAppUITests" */;
+			buildPhases = (
+				D9B786892E45BFC200F07A89 /* Sources */,
+				D9B7868A2E45BFC200F07A89 /* Frameworks */,
+				D9B7868B2E45BFC200F07A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9B7868F2E45BFC200F07A89 /* PBXTargetDependency */,
+			);
+			name = JLangScriptEditorAppUITests;
+			productName = JLangScriptEditorAppUITests;
+			productReference = D9B7868D2E45BFC200F07A89 /* JLangScriptEditorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9B786682E45BFC000F07A89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D9B7866F2E45BFC000F07A89 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					D9B786822E45BFC200F07A89 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D9B7866F2E45BFC000F07A89;
+					};
+					D9B7868C2E45BFC200F07A89 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D9B7866F2E45BFC000F07A89;
+					};
+				};
+			};
+			buildConfigurationList = D9B7866B2E45BFC000F07A89 /* Build configuration list for PBXProject "JLangScriptEditorApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9B786672E45BFC000F07A89;
+			productRefGroup = D9B786712E45BFC000F07A89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9B7866F2E45BFC000F07A89 /* JLangScriptEditorApp */,
+				D9B786822E45BFC200F07A89 /* JLangScriptEditorAppTests */,
+				D9B7868C2E45BFC200F07A89 /* JLangScriptEditorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9B7866E2E45BFC000F07A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B7867D2E45BFC200F07A89 /* Preview Assets.xcassets in Resources */,
+				D9B7867A2E45BFC200F07A89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B786812E45BFC200F07A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B7868B2E45BFC200F07A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9B7866C2E45BFC000F07A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B786762E45BFC000F07A89 /* ContentView.swift in Sources */,
+				D9B786A32E45CFFF00F07A89 /* JLangInterpreter.swift in Sources */,
+				D9B786782E45BFC000F07A89 /* Item.swift in Sources */,
+				D9B786742E45BFC000F07A89 /* JLangScriptEditorAppApp.swift in Sources */,
+				D9B786A12E45C0F900F07A89 /* AppState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B7867F2E45BFC200F07A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B786882E45BFC200F07A89 /* JLangScriptEditorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B786892E45BFC200F07A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B786922E45BFC200F07A89 /* JLangScriptEditorAppUITests.swift in Sources */,
+				D9B786942E45BFC200F07A89 /* JLangScriptEditorAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9B786852E45BFC200F07A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9B7866F2E45BFC000F07A89 /* JLangScriptEditorApp */;
+			targetProxy = D9B786842E45BFC200F07A89 /* PBXContainerItemProxy */;
+		};
+		D9B7868F2E45BFC200F07A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9B7866F2E45BFC000F07A89 /* JLangScriptEditorApp */;
+			targetProxy = D9B7868E2E45BFC200F07A89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D9B786952E45BFC200F07A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9B786962E45BFC200F07A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D9B786982E45BFC200F07A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JLangScriptEditorApp/JLangScriptEditorApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JLangScriptEditorApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lds.JLangScriptEditorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D9B786992E45BFC200F07A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JLangScriptEditorApp/JLangScriptEditorApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JLangScriptEditorApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lds.JLangScriptEditorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D9B7869B2E45BFC200F07A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lds.JLangScriptEditorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLangScriptEditorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JLangScriptEditorApp";
+			};
+			name = Debug;
+		};
+		D9B7869C2E45BFC200F07A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lds.JLangScriptEditorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLangScriptEditorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JLangScriptEditorApp";
+			};
+			name = Release;
+		};
+		D9B7869E2E45BFC200F07A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lds.JLangScriptEditorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = JLangScriptEditorApp;
+			};
+			name = Debug;
+		};
+		D9B7869F2E45BFC200F07A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lds.JLangScriptEditorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = JLangScriptEditorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9B7866B2E45BFC000F07A89 /* Build configuration list for PBXProject "JLangScriptEditorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B786952E45BFC200F07A89 /* Debug */,
+				D9B786962E45BFC200F07A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B786972E45BFC200F07A89 /* Build configuration list for PBXNativeTarget "JLangScriptEditorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B786982E45BFC200F07A89 /* Debug */,
+				D9B786992E45BFC200F07A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B7869A2E45BFC200F07A89 /* Build configuration list for PBXNativeTarget "JLangScriptEditorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B7869B2E45BFC200F07A89 /* Debug */,
+				D9B7869C2E45BFC200F07A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9B7869D2E45BFC200F07A89 /* Build configuration list for PBXNativeTarget "JLangScriptEditorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9B7869E2E45BFC200F07A89 /* Debug */,
+				D9B7869F2E45BFC200F07A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9B786682E45BFC000F07A89 /* Project object */;
+}
